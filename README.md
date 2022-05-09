@@ -1,22 +1,42 @@
-# create-svelte
+# Wedington Photography
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Project Outline
+[[Donovan Photography] - Project Proposal](https://docs.google.com/document/d/1sJ1ubdvdyQ0_AnGVfpfVCejW1XtvfvD7971GnLlK3ws/edit?usp=sharing)
 
-## Creating a project
+## Description
+This is a photography website meant to serve two purposes.  
 
-If you're seeing this, you've probably already done this step. Congrats!
+> - It is both a front end client for portfolio / marketing purposes.  
+> - It is a platform to distribute photos and images to clients   
 
-```bash
-# create a new project in the current directory
-npm init svelte
+- [Wedington Photography](#wedington-photography)
+  - [Project Outline](#project-outline)
+  - [Description](#description)
+  - [Architecture](#architecture)
+    - [Frontend](#frontend)
+    - [Hosting](#hosting)
+  - [Developing](#developing)
+  - [Building](#building)
+  - [Developer Tools](#developer-tools)
+  - [Contribution](#contribution)
+  - [Attributions](#attributions)
 
-# create a new project in my-app
-npm init svelte my-app
-```
+## Architecture
+
+### Frontend
+
+Frontend is built from scratch in Svelte using minimal external dependencies.
+> [Svelte](https://svelte.dev/docs)
+
+### Hosting
+
+AWS hosts the service using Route 53 <tbd>. It is deployed via a CI/CD process with AWS Amplify.
+> [See Deployment](#Deployment)\
+> [Live Site](https://www.wedingtonphotography.com/)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run dev
@@ -41,3 +61,11 @@ You can preview the production build with `npm run preview`.
 
 - [Volta](https://docs.volta.sh/guide/) - This enables us to pin a specific version of Node cross development.
 > See `./package.json` for version used
+
+## Contribution
+
+Want to use this? Like the style? Want to work together? Contact below.
+
+## Attributions
+
+Author - [Nicholas Hazel](https://github.com/sinsys)
