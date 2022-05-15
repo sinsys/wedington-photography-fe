@@ -1,3 +1,6 @@
+/**
+ * index.json - Responsible for logic around fetching all images
+ */
 export async function get() {
 	const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
 	const images = await res.json()

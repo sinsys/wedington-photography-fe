@@ -1,5 +1,7 @@
-<!-- Individual Image -->
-<script context="module" lang="typescript">
+<!-- 
+	[image].svelte - This is responsible for rendering a single image
+-->
+<script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit'
 	export async function load({ fetch, params }: LoadInput): Promise<LoadOutput> {
 		const imageId: string = params.image
@@ -22,7 +24,7 @@
 	}
 </script>
 
-<script lang="typescript">
+<script lang="ts">
 	export let image: { title: string; description: string }
 </script>
 
