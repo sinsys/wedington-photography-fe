@@ -1,5 +1,9 @@
-<script context="module" lang="typescript">
+<!-- 
+	index.svelte - This is responsible for rendering all images
+-->
+<script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit'
+	import type { ImageDetails } from './_interfaces'
 	export async function load({ fetch }: LoadInput): Promise<LoadOutput> {
 		// Fetch resource
 		const res = await fetch('/portfolio.json')
@@ -16,8 +20,8 @@
 	}
 </script>
 
-<script lang="typescript">
-	export let images: Array<{ id: string; title: string; description: string }>
+<script lang="ts">
+	export let images: Array<ImageDetails>
 
 	const handleOnClick = async () => {
 		console.log('Click')
