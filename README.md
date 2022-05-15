@@ -1,13 +1,15 @@
 # Wedington Photography
 
 ## Project Outline
+
 [[Donovan Photography] - Project Proposal](https://docs.google.com/document/d/1sJ1ubdvdyQ0_AnGVfpfVCejW1XtvfvD7971GnLlK3ws/edit?usp=sharing)
 
 ## Description
-This is a photography website meant to serve two purposes.  
 
-> - It is both a front end client for portfolio / marketing purposes.  
-> - It is a platform to distribute photos and images to clients   
+This is a photography website meant to serve two purposes.
+
+> - It is both a front end client for portfolio / marketing purposes.
+> - It is a platform to distribute photos and images to clients
 
 - [Wedington Photography](#wedington-photography)
   - [Project Outline](#project-outline)
@@ -26,11 +28,13 @@ This is a photography website meant to serve two purposes.
 ### Frontend
 
 Frontend is built from scratch in Svelte using minimal external dependencies.
+
 > [Svelte](https://svelte.dev/docs)
 
 ### Hosting
 
 AWS hosts the service using Route 53 <tbd>. It is deployed via a CI/CD process with AWS Amplify.
+
 > [See Deployment](#Deployment)\
 > [Live Site](https://www.wedingtonphotography.com/)
 
@@ -60,7 +64,7 @@ You can preview the production build with `npm run preview`.
 ## Developer Tools
 
 - [Volta](https://docs.volta.sh/guide/) - This enables us to pin a specific version of Node cross development.
-> See `./package.json` for version used
+  > See `./package.json` for version used
 
 ## Contribution
 

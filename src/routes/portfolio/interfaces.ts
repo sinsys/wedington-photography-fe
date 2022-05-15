@@ -1,5 +1,5 @@
 export interface GetImageRequest {
-  params: {
-    image: string
-  }
+	params: {
+		image: string
+	}
 }
