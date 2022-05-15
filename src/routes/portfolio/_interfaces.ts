@@ -1,3 +1,6 @@
+/**
+ * _interfaces.ts - Responsible for data constraints and typescript definitions
+ */
 export interface GetImageRequest {
 	params: {
 		image: string
