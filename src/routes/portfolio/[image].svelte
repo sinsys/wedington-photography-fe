@@ -1,5 +1,5 @@
 <!-- 
-	[image].svelte - This is responsible for rendering a single image
+	* portfolio/[image].svelte - Responsible for rendering a single image
 -->
 <script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit'

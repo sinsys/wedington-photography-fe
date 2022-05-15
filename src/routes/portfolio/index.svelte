@@ -1,5 +1,5 @@
 <!-- 
-	index.svelte - This is responsible for rendering all images
+	* portfolio/index.svelte - This is responsible for rendering all images
 -->
 <script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit'
@@ -33,36 +33,45 @@
 </svelte:head>
 
 <h1>Portfolio</h1>
-<p>Coming soon</p>
 <div class="wrapper">
-	<button on:click={handleOnClick}> Get new Image! </button>
 	<div class="images">
-		<ul>
-			{#each images as image}
-				<li>
-					<a href={`/portfolio/${image.id}`}>
-						{image.title}
-					</a>
-				</li>
-			{/each}
-		</ul>
+		{#each images as image}
+			<div class="image">
+				<a href={`/portfolio/${image.id}`}>
+					{image.title}
+				</a>
+			</div>
+		{/each}
 	</div>
-
-	<p>About</p>
-	<p>Description</p>
 </div>
 
 <style lang="scss">
+	@import '../../styles/colors';
 	@import '../../styles/typography';
 
+	h1 {
+		background-image: linear-gradient(315deg, $colorAshGray 0%, $colorDarkAlt 74%);
+		padding: 1rem;
+		margin: 0;
+		color: $colorWhite;
+	}
 	.wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		@include fontKronaOne;
 
-		.images ul li {
-			margin: 1rem 0;
+		.images {
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			width: 100%;
+			height: 100%;
+
+			div {
+				padding: 1rem;
+				background: $colorCharcoalGray;
+			}
 		}
 	}
 </style>

@@ -29,20 +29,26 @@ This is a photography website meant to serve two purposes.
 
 Frontend is built from scratch in Svelte using minimal external dependencies.
 
-> [Svelte](https://svelte.dev/docs)
+> [SvelteKit](https://kit.svelte.dev/]) > [Svelte](https://svelte.dev/docs)
 
 ### Hosting
 
-AWS hosts the service using Route 53 <tbd>. It is deployed via a CI/CD process with AWS Amplify.
+The site is hosted via Vercel. Please look at [Attributions](#Attributions) to contribute.
 
-> [See Deployment](#Deployment)\
-> [Live Site](https://www.wedingtonphotography.com/)
+> [Vercel](https://vercel.com/) > [Live Site](https://www.wedingtonphotography.com/)
+> To deploy the app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install`, start a development server:
-
 ```bash
+# clone site
+git clone <repo name>
+cd <repo name>
+
+# instal dependencies
+npm install
+
+# development server
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -51,15 +57,15 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```bash
+# build app
 npm run build
+
+# preview the production build
+npm run preview
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ## Developer Tools
 

@@ -1,3 +1,6 @@
+<!-- 
+	* index.svelte - Responsible for main page
+-->
 <svelte:head>
 	<title>Wedington Photography</title>
 </svelte:head>

@@ -1,3 +1,6 @@
+<!-- 
+	* about.svelte - Responsible for about page
+-->
 <svelte:head>
 	<title>Wedington Photography - About</title>
 </svelte:head>
