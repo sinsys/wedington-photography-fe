@@ -7,7 +7,7 @@ export async function get() {
 	if (res.ok) {
 		return {
 			status: 200,
-			body: { images }
+			body: { images: images.slice(0, 20) }
 		}
 	}
 	return {

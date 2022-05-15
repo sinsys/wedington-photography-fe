@@ -1,5 +1,5 @@
 /**
- * [image].json - Responsible for logic around fetching a single image
+ * portfolio/[image].json - Responsible for logic around fetching a single image
  */
 import type { GetImageRequest } from './_interfaces'
 

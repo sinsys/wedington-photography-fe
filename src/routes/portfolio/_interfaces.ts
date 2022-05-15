@@ -1,5 +1,5 @@
 /**
- * _interfaces.ts - Responsible for data constraints and typescript definitions
+ * portfolio/_interfaces.ts - Responsible for data constraints and typescript definitions
  */
 export interface GetImageRequest {
 	params: {

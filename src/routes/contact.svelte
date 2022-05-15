@@ -1,3 +1,6 @@
+<!-- 
+	* contact.svelte - Responsible for contact page
+-->
 <svelte:head>
 	<title>Wedington Photography - Contact</title>
 </svelte:head>
